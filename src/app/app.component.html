@@ -1,0 +1,12 @@
+<nav>
+    <h1 routerLink="">NgRx Angular</h1>
+    <div>
+        <p routerLink="">Home</p>
+        <p routerLink="cart">Cart</p>
+        <p *ngIf="!checkAuth()" routerLink="login">Login</p>
+        <button *ngIf="checkAuth()" (click)="doLogout()">Logout</button>
+    </div>
+</nav>
+
+<router-outlet></router-outlet>
+<br><br>

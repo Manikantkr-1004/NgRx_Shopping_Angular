@@ -1,0 +1,12 @@
+<h1 *ngIf="cartData.length===0">Cart is Empty</h1>
+
+<div id="parent" *ngIf="cartData.length>0">
+    <div *ngFor="let item of cartData">
+        <img src={{item.image}} alt={{item.title}}>
+        <h3>{{item.title}}</h3>
+        <h4>Price: ₹{{item.price}}</h4>
+        <h4>{{item.rating.count}} Reviews with {{item.rating.rate}}Stars.</h4>
+        <p>{{item.description.substring(0,50)}}...</p>
+        <button (click)="removeItem(item.id)">Remove To Cart</button>
+    </div>
+</div>

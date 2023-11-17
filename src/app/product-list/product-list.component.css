@@ -1,0 +1,31 @@
+#parent{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    margin-top: 80px;
+}
+#parent>div{
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#parent>div>img{
+    width: 100px;
+    filter: saturate(4);
+}
+#parent>div>button{
+    width: 100%;
+    padding: 9px 0px;
+    background: #000;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+}
+#parent>div>button:hover{
+    background: linear-gradient(15deg, blue,red);
+    cursor: pointer;
+}
